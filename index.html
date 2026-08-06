@@ -664,4 +664,4 @@ function resetAll(){if(confirm("Tout effacer ?")){data=clone(DEFAULT);localStora
 if(localStorage.getItem("budget_dark_mode")==="1")document.body.classList.add("dark");el("todayLabel").textContent=new Date().toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long"});el("opDate").value=today();recurring();save();if(!data.setupDone&&data.operations.length===0&&data.fixedCharges.length===0&&Object.keys(data.budgets).length===0&&data.accounts.every(a=>Number(a.initialBalance||0)===0))setTimeout(openSetup,300);setTimeout(checkForUpdate,700);
 </script>
 </body>
-</html>
+</html 
